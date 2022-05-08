@@ -1,0 +1,14 @@
+{
+  "name": "analyze-project",
+  "scripts": {
+    "this-works": "pnpm exec cem analyze --dev --litelement --globs \"../custom-elements/**/*.ts\"",
+    "this-does-not": "pnpm exec cem analyze  --dev --litelement --globs \"./node_modules/custom-elements/**/*.ts\""
+  },
+  "dependencies": {
+    "custom-elements": "workspace:*"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.5.7"
+  },
+  "customElements": "custom-elements.json"
+}
